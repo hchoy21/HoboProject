@@ -7,14 +7,11 @@
             <h1 id="default-school">Florida Gulf Coast University</h1>
             <p></p>
             <h1>HOBO Weather Monitor</h1>
-            <p>pretty background here</p>
         </div>
     </div>
 
 
     <div class="container">
-        <p>and here</p>
-
         <h1>Currrent Data Readings</h1>
         <div class="row">
             <div class="col-md-4">

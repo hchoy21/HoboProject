@@ -1,9 +1,25 @@
 ﻿body {
     padding-top:60px;
+	color: black;
+	background-color: #3399ff;
+    background-image: url('Elegant_Background-7.jpg');
+	background-attachment: fixed;
+	background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+          
 }
 
+.jumbotron {
+    color: white;
+    background-image: url('Elegant_Background-17.jpg');
+	background-attachment: fixed;
+	background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
-#something {
-    font:bold;
-    color:red;
+.col-md-4:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
 }
