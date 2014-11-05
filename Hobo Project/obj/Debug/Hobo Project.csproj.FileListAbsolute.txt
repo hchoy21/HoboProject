@@ -1,0 +1,11 @@
+C:\Users\hendrikch1\Documents\Visual Studio 2012\Projects\Hobo Project\Hobo Project\bin\Hobo Project.dll
+C:\Users\hendrikch1\Documents\Visual Studio 2012\Projects\Hobo Project\Hobo Project\bin\Hobo Project.pdb
+C:\Users\hendrikch1\Documents\Visual Studio 2012\Projects\Hobo Project\Hobo Project\obj\Debug\Hobo Project.dll
+C:\Users\hendrikch1\Documents\Visual Studio 2012\Projects\Hobo Project\Hobo Project\obj\Debug\Hobo Project.pdb
+C:\Users\hendrikch1\Documents\Visual Studio 2012\Projects\Hobo Project\Hobo Project\obj\Debug\Hobo Project.csprojResolveAssemblyReference.cache
+C:\Users\hendrikch1\documents\visual studio 2012\Projects\Hobo Project\Hobo Project\bin\MySql.Data.dll
+C:\Users\User\Documents\Visual Studio 2012\WebSites\HoboProject\Hobo Project\bin\Hobo Project.dll
+C:\Users\User\Documents\Visual Studio 2012\WebSites\HoboProject\Hobo Project\bin\Hobo Project.pdb
+C:\Users\User\Documents\Visual Studio 2012\WebSites\HoboProject\Hobo Project\obj\Debug\Hobo Project.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2012\WebSites\HoboProject\Hobo Project\obj\Debug\Hobo Project.dll
+C:\Users\User\Documents\Visual Studio 2012\WebSites\HoboProject\Hobo Project\obj\Debug\Hobo Project.pdb

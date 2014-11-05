@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hobo_Project.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sample Bootstrap Template With ASP.NET</title>
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/hobo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="www.fgcu.edu">FGCU 2014</a>
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="Tables.aspx">Tables</a></li>
+                    <li><a href="Graphs.aspx">Graphs</a></li>
+                    <li><a href="Predictions.aspx">Predictions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- Scripts -->
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
