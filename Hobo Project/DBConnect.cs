@@ -74,20 +74,32 @@ namespace Hobo_Project
             }
         }
 
-        //Insert statement
-        public void Insert()
+        public string getLastData(string colName)
         {
-            // not needed for this project
-        }
+            string query = "SELECT " + colName + " FROM readouts"
+                + " ORDER BY " + colName + " DESC";
+            
+            string result = "n/a";
 
-        //Update statement
-        public void Update()
-        {
-        }
+            if (this.OpenConnection() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader dataReader = cmd.ExecuteReader();
 
-        //Delete statement
-        public void Delete()
-        {
+                while (dataReader.Read())
+                {
+                    result = dataReader[colName].ToString();
+                }
+
+                dataReader.Close();
+                this.CloseConnection();
+
+                return result;
+            }
+            else
+            {
+                return result;
+            }
         }
 
 
@@ -156,6 +168,22 @@ namespace Hobo_Project
             }
         }
 
+        //Insert statement
+        public void Insert()
+        {
+            // not needed for this project
+        }
+
+        //Update statement
+        public void Update()
+        {
+        }
+
+        //Delete statement
+        public void Delete()
+        {
+
+        }
 
         //Backup
         public void Backup()

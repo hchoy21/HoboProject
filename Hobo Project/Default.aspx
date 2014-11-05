@@ -16,15 +16,15 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>Pressure</h2>
-                <p>pressure data</p>
+                <p><asp:Label id="currentPressureLabel" runat="server"></asp:Label></p>
             </div>
             <div class="col-md-4">
                 <h2>Temperature</h2>
-                <p>temperature data</p>
+                <p><asp:Label id="currentTemperatureLabel" runat="server"></asp:Label></p>
             </div>
             <div class="col-md-4">
                 <h2>Humidity</h2>
-                <p>humidity data</p>
+                <p><asp:Label id="currentRHLabel" runat="server"></asp:Label></p>
             </div>
         </div>
     </div>
