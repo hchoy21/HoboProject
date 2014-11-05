@@ -6,7 +6,6 @@
 	background-attachment: fixed;
 	background-position: bottom;
     background-size: 100%;
-    background-repeat: no-repeat;
           
 }
 
@@ -16,7 +15,6 @@
 	background-attachment: fixed;
 	background-position: bottom;
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .col-md-4:hover {
