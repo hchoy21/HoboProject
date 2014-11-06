@@ -19,13 +19,11 @@ namespace Hobo_Project
             string currentPressure       = dbcon.getLastData("pressure");
             string currentTemperature    = dbcon.getLastData("temperature");
             string currentRh             = dbcon.getLastData("rh");
-            string currentTime           = dbcon.getLastData("dateTime");
 
             // set the labels
             currentPressureLabel.Text    = currentPressure + " Hg";
             currentTemperatureLabel.Text = currentTemperature + " F";
             currentRHLabel.Text          = currentRh + "%";
-            currentTimeLabel.Text        = currentTime;
 
         }
     }
