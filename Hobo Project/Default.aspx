@@ -12,7 +12,7 @@
 
 
     <div class="container">
-        <h1>Currrent Data Readings</h1>
+        <h1>Currrent Data Readings <asp:Label ID="currentTimeLabel" runat="server"></asp:Label></h1>
         <div class="row">
             <div class="col-md-4">
                 <h2>Pressure</h2>

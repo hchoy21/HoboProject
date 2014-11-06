@@ -76,7 +76,7 @@ namespace Hobo_Project
 
         public string getLastData(string colName)
         {
-            string query = "SELECT " + colName + " FROM readouts"
+            string query = "SELECT " + colName + " FROM test"
                 + " ORDER BY " + colName + " DESC";
             
             string result = "n/a";
@@ -105,7 +105,7 @@ namespace Hobo_Project
 
         public List<string> readData(string colName)
         {
-            string query = "SELECT " + colName + " FROM readouts";
+            string query = "SELECT " + colName + " FROM test";
 
             List<string> results = new List<string>();
 
