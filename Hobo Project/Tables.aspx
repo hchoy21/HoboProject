@@ -11,7 +11,10 @@
             <div class="readouts-container">
                 <div class="panel panel-default">
                     <div class="panel-heading">Readouts</div>
-                    <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover"></asp:GridView>
+                    <asp:GridView ID="GridView1" 
+                        onrowdatabound="GridView1_RowDataBound" 
+                        autogeneratecolumns="True" 
+                        runat="server" CssClass="table table-hover" SortedDescendingHeaderStyle-Wrap="False"></asp:GridView>
                 </div>
             </div>
         </form>
