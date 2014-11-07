@@ -22,7 +22,7 @@ namespace Hobo_Project
 
             // set the labels
             currentPressureLabel.Text    = currentPressure + " Hg";
-            currentTemperatureLabel.Text = currentTemperature + " F";
+            currentTemperatureLabel.Text = currentTemperature + " °F";
             currentRHLabel.Text          = currentRh + "%";
 
         }
