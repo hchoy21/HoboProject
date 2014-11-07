@@ -6,13 +6,13 @@
         <div class="container">
             <h1 id="default-school">Florida Gulf Coast University</h1>
             <p></p>
-            <h1>HOBO Weather Monitor</h1>
+            <h1>HOBO U30 Weather Monitor</h1>
         </div>
     </div>
 
 
     <div class="container">
-        <h1>Current Readings</h1>
+        <h1>Latest Readings</h1>
         <div class="row">
             <div class="col-md-4">
                 <h2>Pressure</h2>
