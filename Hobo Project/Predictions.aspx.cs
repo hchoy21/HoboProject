@@ -13,5 +13,10 @@ namespace Hobo_Project
         {
 
         }
+
+        protected void submit(object sender, EventArgs e)
+        {
+            confirm.Text = "Prediction sent.";
+        }
     }
 }
