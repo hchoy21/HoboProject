@@ -19,5 +19,5 @@
             </div>
         </form>
     </div>
-    <link href="Content/css/Tables.css" rel="stylesheet" />
+    <link href="Content/css/hobo.css" rel="stylesheet" />
 </asp:Content>

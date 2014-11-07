@@ -8,4 +8,6 @@
     <div class="embed-responsive-4by3">
         <iframe width="800" height="600" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/1/560/420"></iframe>
     </div>
+
+    <link href="Content/css/hobo.css" rel="stylesheet" />
 </asp:Content>

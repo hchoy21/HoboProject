@@ -22,4 +22,5 @@
             <p><asp:Label id="confirm" runat="server"/></p>
         </form>
     </div>
+    <link href="Content/css/hobo.css" rel="stylesheet" />
 </asp:Content>

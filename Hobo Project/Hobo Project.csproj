@@ -67,7 +67,6 @@
     <Content Include="Content\css\Elegant_Background-17.jpg" />
     <Content Include="Content\css\Elegant_Background-7.jpg" />
     <Content Include="Content\css\hobo.css" />
-    <Content Include="Content\css\Tables.css" />
     <Content Include="Content\fgcu_logo.png" />
     <Content Include="Default.aspx" />
     <Content Include="Graphs.aspx" />
