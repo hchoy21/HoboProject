@@ -7,20 +7,26 @@
     </div>
 
     <div class="container">
-        <form id="Form1" runat="server">
-            <h1>What do you predict the weather will be at FGCU.</h1>
-            <asp:RadioButton id="Rain" Text="Rain"
-            GroupName="colors" runat="server"/>
-            <br>
-            <asp:RadioButton id="Clear" Text="Clear Skies"
-            GroupName="colors" runat="server"/>
-            <br>
-            <asp:RadioButton id="Sunny" Text="Sunny" 
-            GroupName="colors" runat="server"/>
-            <br>
-            <asp:Button ID="Button1" text="Submit" OnClick="submit" runat="server"/>
-            <p><asp:Label id="confirm" runat="server"/></p>
-        </form>
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:Literal ID="litResults" runat="server" visible="false"/><br />
+                <h3>What do you predict the weather will be at FGCU.</h3>
+                <asp:RadioButtonList ID="radVote" runat="server">
+                    <asp:ListItem>Rain</asp:ListItem>
+                    <asp:ListItem>Clear Skies</asp:ListItem>
+                    <asp:ListItem>Sunny</asp:ListItem>
+                </asp:RadioButtonList>
+                <asp:Button ID="butVote" 
+                    runat="server" Text="Vote" onclick="butVote_Click" /><br />
+                <asp:Label ID="lblStatus" runat="server" /><br />
+                <asp:Button ID="butResults" runat="server" Text="Show Results" 
+                    onclick="butResults_Click" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
     </div>
     <link href="Content/css/hobo.css" rel="stylesheet" />
 </asp:Content>
