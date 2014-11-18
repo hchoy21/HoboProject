@@ -60,22 +60,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\b3.png" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\Elegant_Background-17.jpg" />
-    <Content Include="Content\css\Elegant_Background-7.jpg" />
+    <Content Include="Content\css\Elegant_Background-17a.jpg" />
+    <Content Include="Content\css\Elegant_Background-7a.jpg" />
     <Content Include="Content\css\hobo.css" />
     <Content Include="Content\fgcu_logo.png" />
     <Content Include="Default.aspx" />
     <Content Include="Graphs.aspx" />
+    <Content Include="Poll.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Predictions.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Tables.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnect.cs" />
