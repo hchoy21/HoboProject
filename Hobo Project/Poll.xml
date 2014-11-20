@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Poll>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:47:21 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:47:30 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:48:23 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:48:37 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:48:45 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:49:15 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 6:49:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 6:50:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 6:50:24 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 7:02:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 7:03:21 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 7:04:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Clear Skies</Choice>
+    <Time>11/19/2014 7:05:08 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny</Choice>
+    <Time>11/19/2014 7:24:28 PM</Time>
+  </Vote>
+</Poll>

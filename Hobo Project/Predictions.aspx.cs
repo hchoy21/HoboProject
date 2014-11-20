@@ -9,6 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using System.Xml;
 
 namespace Hobo_Project
 {
@@ -16,15 +17,32 @@ namespace Hobo_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (checkTime())
+            {
+                clearXML();
+            }
         }
 
         protected void butVote_Click(object sender, EventArgs e)
         {
             if (radVote.SelectedItem == null)
                 lblStatus.Text = "Please make your prediction";
-            else
+            else if (Request.Cookies["Voted"] == null)
+            {
+                Response.Cookies["Voted"].Value = "True";
+
+                int hoursLeft = 23 - DateTime.Now.Hour;
+                int minutesLeft = 59 - DateTime.Now.Minute;
+                int secondsLeft = 60 - DateTime.Now.Second;
+                DateTime midnight = DateTime.Now.AddHours(hoursLeft);
+                midnight = midnight.AddMinutes(minutesLeft);
+                midnight = midnight.AddSeconds(secondsLeft);
+
+                Response.Cookies["Voted"].Expires = midnight;
                 countVote(radVote.SelectedItem.ToString());
+            }
+            else
+                lblStatus.Text = "Only one vote per day please.";
         }
 
         protected void countVote(string theVote)
@@ -33,7 +51,8 @@ namespace Hobo_Project
             {
                 XDocument xmlDoc = XDocument.Load(Server.MapPath("Poll.xml"));
 
-                xmlDoc.Element("Poll").Add(new XElement("Vote", new XElement("Choice", theVote)));
+                xmlDoc.Element("Poll").Add(new XElement("Vote", new XElement("Choice", theVote), 
+                    new XElement("Time", DateTime.Now.ToString())));
 
                 xmlDoc.Save(Server.MapPath("Poll.xml"));
                 lblStatus.Text = "Thank you for your vote.";
@@ -94,6 +113,48 @@ namespace Hobo_Project
             litResults.Text = "Rain: " + rainCount + " votes (" + rainPercent + "%).<br />";
             litResults.Text = litResults.Text + "Clear Skies: " + clearCount + " votes (" + clearPercent + "%).<br />";
             litResults.Text = litResults.Text + "Sunny: " + sunnyCount + " votes (" + sunnyPercent + "%).<br /><br />";
+        }
+
+        protected void clearXML()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(Server.MapPath("Poll.xml"));
+
+            XmlNode poll = xmlDoc.SelectSingleNode("//Poll");
+            XmlNodeList votes = poll.SelectNodes("Vote");
+
+            for (int i = 0; i < votes.Count; i++)
+            {
+                poll.RemoveChild(votes[i]);
+                xmlDoc.Save(Server.MapPath("Poll.xml"));
+            }
+        }
+
+        protected bool checkTime()
+        {
+            XDocument xmlDoc = XDocument.Load(Server.MapPath("Poll.xml"));
+
+            if (xmlDoc.Element("Poll").Element("Vote") == null)
+            {
+                return false;
+            }
+
+            char[] delimiterChars = { ' ', '/', ':' };
+            string time = xmlDoc.Element("Poll").Element("Vote").Element("Time").Value;
+            string[] date = time.Split(delimiterChars);
+
+            int day = Convert.ToInt32(date[1]);
+            int month = Convert.ToInt32(date[0]);
+            int year = Convert.ToInt32(date[2]);
+
+            if (day != DateTime.Now.Day || month != DateTime.Now.Month || year != DateTime.Now.Year)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         protected void butResults_Click(object sender, EventArgs e)
