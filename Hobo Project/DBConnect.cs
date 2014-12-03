@@ -103,20 +103,25 @@ namespace Hobo_Project
         }
 
 
-        public List<string> readData(string colName)
+        public List<double> readData(string colName)
         {
             string query = "SELECT " + colName + " FROM test";
 
-            List<string> results = new List<string>();
+            List<double> results = new List<double>();
 
+
+            // connect to mysql database and table
             if (this.OpenConnection() == true)
             {
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
+                // loop through table to read
                 while (dataReader.Read())
                 {
-                    results.Add(dataReader[colName] + "");
+                    // convert entry to a string
+                    string entry = dataReader[colName].ToString();
+                    results.Add(Convert.ToDouble(entry));
                 }
 
                 dataReader.Close();
@@ -130,69 +135,44 @@ namespace Hobo_Project
             }
         }
 
-        //Select statement
-        public List<string>[] Select()
+        public List<DateTime> readDateTime(string colName)
         {
-            string query = "SELECT * FROM readouts";
+            string query = "SELECT " + colName + " FROM test";
 
-            List<string>[] list = new List<string>[4];
-            list[0] = new List<string>();
-            list[1] = new List<string>();
-            list[2] = new List<string>();
-            list[3] = new List<string>();
+            List<DateTime> results = new List<DateTime>();
 
-            //open connection
+
+            // connect to mysql database and table
             if (this.OpenConnection() == true)
             {
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
-                // read data and store in list
+                // loop through table to read
                 while (dataReader.Read())
                 {
-                    list[0].Add(dataReader["dateTime"] + "");
-                    list[1].Add(dataReader["pressure"] + "");
-                    list[2].Add(dataReader["temperature"] + "");
-                    list[3].Add(dataReader["rh"] + "");
+                    // convert entry to a string
+                    string entry = dataReader[colName].ToString();
+
+                    // convert to type DateTime
+                    DateTime theDateTime = DateTime.ParseExact(entry, "MM/dd/yy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+
+                    // add to List results
+                    results.Add(theDateTime);
+
                 }
 
-                // close datareader and connection
                 dataReader.Close();
                 this.CloseConnection();
 
-                return list;
+                return results;
             }
             else
             {
-                return list;
+                return results;
             }
         }
 
-        //Insert statement
-        public void Insert()
-        {
-            // not needed for this project
-        }
-
-        //Update statement
-        public void Update()
-        {
-        }
-
-        //Delete statement
-        public void Delete()
-        {
-
-        }
-
-        //Backup
-        public void Backup()
-        {
-        }
-
-        //Restore
-        public void Restore()
-        {
-        }
+        
     }
 }

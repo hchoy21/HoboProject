@@ -7,12 +7,12 @@ namespace Hobo_Project
 {
     public class Readings
     {
-        public string DateTime { get; set; }
+        public DateTime Time { get; set; }
 
-        public string Pressure { get; set; }
+        public double Pressure { get; set; }
 
-        public string Temperature { get; set; }
+        public double Temperature { get; set; }
 
-        public string RelativeHumidity { get; set; }
+        public double RelativeHumidity { get; set; }
     }
 }
