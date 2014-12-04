@@ -1,11 +1,11 @@
-obj
-bin
-deploy
-deploy/*
-_ReSharper.*
-*.csproj.user
-*.resharper.user
-*.resharper
-*.suo
-*.cache
+Hobo Project/obj
+Hobo Project/bin
+Hobo Project/deploy
+Hobo Project/deploy/*
+Hobo Project/_ReSharper.*
+Hobo Project/*.csproj.user
+Hobo Project/*.resharper.user
+Hobo Project/*.resharper
+Hobo Project/*.suo
+Hobo Project/*.cache
 ~$*
