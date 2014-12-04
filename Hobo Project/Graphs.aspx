@@ -3,25 +3,27 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="Scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/Highcharts-4.0.1/js/highcharts.js" type="text/javascript"></script>
+
     <form id="form1" runat="server">
-    <div class="page-header">
-        <h1>Graphs</h1>
-    </div>
-
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/4.embed?width=640&height=480"></iframe>
+        <div class="page-header">
+            <h1>Graphs</h1>
+        </div>
         
-    </div>
 
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/5.embed?width=640&height=480"></iframe>
-    </div>
 
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/6.embed?width=640&height=480"></iframe>
-    </div>
+        <div id="container" style="min-width: 248px; height: auto;">
+            <asp:Literal ID="ltrChart" runat="server"></asp:Literal>
+        </div>
 
+
+
+   
+    </form>
 
     <link href="Content/css/hobo.css" rel="stylesheet" />
-</form>
+
+    
 </asp:Content>
+

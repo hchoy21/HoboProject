@@ -15,3 +15,4 @@ C:\Users\hendrikch1\Documents\HoboProject\Hobo Project\bin\MySql.Data.dll
 C:\Users\hendrikch1\Documents\HoboProject\Hobo Project\obj\Debug\Hobo Project.dll
 C:\Users\hendrikch1\Documents\HoboProject\Hobo Project\obj\Debug\Hobo Project.pdb
 C:\Users\hendrikch1\Documents\HoboProject\Hobo Project\obj\Debug\Hobo Project.csprojResolveAssemblyReference.cache
+C:\Users\hendrikch1\Documents\HoboProject\Hobo Project\bin\DotNet.Highcharts.dll

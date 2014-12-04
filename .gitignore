@@ -7,5 +7,6 @@ Hobo Project/*.csproj.user
 Hobo Project/*.resharper.user
 Hobo Project/*.resharper
 Hobo Project/*.suo
+*.suo
 Hobo Project/*.cache
 ~$*
