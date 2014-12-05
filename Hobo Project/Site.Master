@@ -26,7 +26,7 @@
                     <li><a href="Default.aspx">Home</a></li>
                     <li><a href="Tables.aspx">Tables</a></li>
                     <li><a href="Graphs.aspx">Graphs</a></li>
-                    <li><a href="Predictions.aspx">About</a></li>
+                    <li><a href="About.aspx">About</a></li>
                 </ul>
             </div>
         </div>

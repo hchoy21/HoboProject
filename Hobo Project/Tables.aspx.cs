@@ -52,12 +52,74 @@ namespace Hobo_Project
         {
             List<Readings> results = new List<Readings>();
 
+            searchStatusLabel.Text = "";
+            bool flag = true;
 
+            if (!String.IsNullOrWhiteSpace(searchDateBeginTB.Text) && !String.IsNullOrWhiteSpace(searchDateEndTB.Text))
+            {
+                results = date_Search(results);
+                flag = false;
+            }
+            else if (String.IsNullOrWhiteSpace(searchDateBeginTB.Text) || String.IsNullOrWhiteSpace(searchDateEndTB.Text))
+            {
+                String error = "Please fill in both fields for " + searchDateLabel.Text + ".<br />";
+                print_Error(error);
+            }
+
+            if (!String.IsNullOrWhiteSpace(searchPressureBeginTB.Text) && !String.IsNullOrWhiteSpace(searchPressureEndTB.Text))
+            {
+                results = pressure_Search(results);
+                flag = false;
+            }
+            else if (String.IsNullOrWhiteSpace(searchPressureBeginTB.Text) || String.IsNullOrWhiteSpace(searchPressureEndTB.Text))
+            {
+                    String error = "Please fill in both fields for " + searchPressureLabel.Text + ".<br />";
+                    print_Error(error);
+            }
+
+            if (!String.IsNullOrWhiteSpace(searchTempBeginTB.Text) && !String.IsNullOrWhiteSpace(searchTempEndTB.Text))
+            {
+                results = temp_Search(results);
+                flag = false;
+            }
+            else if (String.IsNullOrWhiteSpace(searchTempBeginTB.Text) || String.IsNullOrWhiteSpace(searchTempEndTB.Text))
+            {
+                    String error = "Please fill in both fields for " + searchTempLabel.Text + ".<br />";
+                    print_Error(error);
+            }
+
+            if (!String.IsNullOrWhiteSpace(searchRhBeginTB.Text) && !String.IsNullOrWhiteSpace(searchRhEndTB.Text))
+            {
+                results = rh_Search(results);
+                flag = false;
+            }
+            else if (String.IsNullOrWhiteSpace(searchRhBeginTB.Text) || String.IsNullOrWhiteSpace(searchRhEndTB.Text))
+            {
+                    String error = "Please fill in both fields for " + searchRhLabel.Text + ".<br />";
+                    print_Error(error);
+            }
+
+            if (!String.IsNullOrWhiteSpace(searchStatusLabel.Text) || flag)
+            {
+                results = readingsList;
+            }
+            GridView1.DataSource = results;
+            GridView1.DataBind();
+        }
+
+        protected List<Readings> date_Search(List<Readings> results)
+        {
             try
             {
                 DateTime startDate = Convert.ToDateTime(searchDateBeginTB.Text);
                 DateTime endDate   = Convert.ToDateTime(searchDateEndTB.Text);
 
+                if (startDate.Date.CompareTo(endDate) > 0)
+                {
+                    string error = "Invalid range of dates, please try again.<br />";
+                    print_Error(error);
+                    return results;
+                }
 
                 for (int i = 0; i < readingsList.Count(); i++)
                 {
@@ -67,24 +129,119 @@ namespace Hobo_Project
                         results.Add(readingsList[i]);
                     }
                 }
-
-
-                GridView1.DataSource = results;
-                GridView1.DataBind();
-
-            }catch(FormatException){
-                searchStatusLabel.Text = "Incorrect Date Format, please try again";
+            }
+            catch (FormatException)
+            {
+                string error = "Incorrect Date Format, please try again.<br />";
+                print_Error(error);
             }
 
-                
-
-            
-
-
-            
-            
+            return results;
         }
 
-        
+        protected List<Readings> pressure_Search(List<Readings> results)
+        {
+            double beginPressure = 0;
+            double endPressure = 0;
+            List<Readings> res = new List<Readings>();
+
+            if (double.TryParse(searchPressureBeginTB.Text, out beginPressure) &&
+                double.TryParse(searchPressureEndTB.Text, out endPressure))
+            {
+                if(beginPressure > endPressure)
+                {
+                    string error = "Invalid pressure range.<br />";
+                    print_Error(error);
+                    return results;
+                }
+                for (int i = 0; i < results.Count(); i++)
+                {
+                    if (results[i].Pressure >= beginPressure &&
+                        results[i].Pressure <= endPressure)
+                    {
+                        res.Add(results[i]);
+                    }
+                }
+                return res;
+            }
+            else
+            {
+                string error = "Invalid pressure, please enter another number.<br />";
+                print_Error(error);
+            }
+            return results;
+        }
+
+        protected List<Readings> temp_Search(List<Readings> results)
+        {
+            double beginTemp = 0;
+            double endTemp = 0;
+            List<Readings> res = new List<Readings>();
+
+            if (double.TryParse(searchTempBeginTB.Text, out beginTemp) &&
+                double.TryParse(searchTempEndTB.Text, out endTemp))
+            {
+                if (beginTemp > endTemp)
+                {
+                    string error = "Invalid temperature range.<br />";
+                    print_Error(error);
+                    return results;
+                }
+                for (int i = 0; i < results.Count(); i++)
+                {
+                    if (results[i].Temperature >= beginTemp &&
+                        results[i].Temperature <= endTemp)
+                    {
+                        res.Add(results[i]);
+                    }
+                }
+                return res;
+            }
+            else
+            {
+                string error = "Invalid temperature, please enter another number.<br />";
+                print_Error(error);
+            }
+            return results;
+        }
+
+        protected List<Readings> rh_Search(List<Readings> results)
+        {
+            double beginRh = 0;
+            double endRh = 0;
+            List<Readings> res = new List<Readings>();
+
+            if (double.TryParse(searchRhBeginTB.Text, out beginRh) &&
+                double.TryParse(searchRhEndTB.Text, out endRh))
+            {
+                if (beginRh > endRh)
+                {
+                    string error = "Invalid relative humidity range.<br />";
+                    print_Error(error);
+                    return results;
+                }
+                for (int i = 0; i < results.Count(); i++)
+                {
+                    if (results[i].RelativeHumidity >= beginRh &&
+                        results[i].RelativeHumidity <= endRh)
+                    {
+                        res.Add(results[i]);
+                    }
+                }
+                return res;
+            }
+            else
+            {
+                string error = "Invalid relative humidity, please enter another number.<br />";
+                print_Error(error);
+            }
+            return results;
+        }
+
+        protected void print_Error(string error)
+        {
+            searchStatusLabel.Text = searchStatusLabel.Text + error;
+        }
+
     }
 }

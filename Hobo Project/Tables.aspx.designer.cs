@@ -67,6 +67,87 @@ namespace Hobo_Project {
         protected global::System.Web.UI.WebControls.TextBox searchDateEndTB;
         
         /// <summary>
+        /// searchPressureLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label searchPressureLabel;
+        
+        /// <summary>
+        /// searchPressureBeginTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchPressureBeginTB;
+        
+        /// <summary>
+        /// searchPressureEndTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchPressureEndTB;
+        
+        /// <summary>
+        /// searchTempLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label searchTempLabel;
+        
+        /// <summary>
+        /// searchTempBeginTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchTempBeginTB;
+        
+        /// <summary>
+        /// searchTempEndTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchTempEndTB;
+        
+        /// <summary>
+        /// searchRhLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label searchRhLabel;
+        
+        /// <summary>
+        /// searchRhBeginTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchRhBeginTB;
+        
+        /// <summary>
+        /// searchRhEndTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchRhEndTB;
+        
+        /// <summary>
         /// searchStatusLabel control.
         /// </summary>
         /// <remarks>
