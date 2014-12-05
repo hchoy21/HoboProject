@@ -1,59 +1,451 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Poll>
   <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:47:21 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:47:30 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:48:23 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:48:37 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:48:45 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:49:15 PM</Time>
-  </Vote>
-  <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 6:49:46 PM</Time>
-  </Vote>
-  <Vote>
     <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 6:50:22 PM</Time>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 6:50:24 PM</Time>
+    <Choice>Light rain</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 7:02:44 PM</Time>
+    <Choice>Heavy rain</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 7:03:21 PM</Time>
+    <Choice>Cloudy hot</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 7:04:47 PM</Time>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Clear Skies</Choice>
-    <Time>11/19/2014 7:05:08 PM</Time>
+    <Choice>Cloudy warm</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
   </Vote>
   <Vote>
-    <Choice>Sunny</Choice>
-    <Time>11/19/2014 7:24:28 PM</Time>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 4:20:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Light rain</Choice>
+    <Time>12/4/2014 7:17:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Heavy rain</Choice>
+    <Time>12/4/2014 7:17:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy hot</Choice>
+    <Time>12/4/2014 7:17:28 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy hot</Choice>
+    <Time>12/4/2014 7:17:31 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy hot</Choice>
+    <Time>12/4/2014 7:17:38 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Heavy rain</Choice>
+    <Time>12/4/2014 7:17:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy warm</Choice>
+    <Time>12/4/2014 7:17:55 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy warm</Choice>
+    <Time>12/4/2014 7:17:59 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy warm</Choice>
+    <Time>12/4/2014 7:18:05 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy warm</Choice>
+    <Time>12/4/2014 7:18:06 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 7:18:17 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 7:18:17 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 7:18:18 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 7:18:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Cloudy cold</Choice>
+    <Time>12/4/2014 7:18:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:31 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:35 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:36 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:38 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and Warm</Choice>
+    <Time>12/4/2014 7:18:42 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:52 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:52 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:52 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:52 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:52 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:53 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Hot and humid</Choice>
+    <Time>12/4/2014 7:18:53 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:02 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:03 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Sunny and cold</Choice>
+    <Time>12/4/2014 7:19:03 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:11 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:11 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:12 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:13 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Foggy</Choice>
+    <Time>12/4/2014 7:19:14 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:18 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:18 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:18 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:18 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:20 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:20 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:20 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:20 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:22 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Thunderstorm</Choice>
+    <Time>12/4/2014 7:19:26 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:30 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:32 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:32 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:32 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:32 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:32 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:33 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:33 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:35 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:35 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:35 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy hot</Choice>
+    <Time>12/4/2014 7:19:37 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:39 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:40 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:40 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:40 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:40 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy cold</Choice>
+    <Time>12/4/2014 7:19:42 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:44 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:45 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:45 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:46 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:47 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:48 PM</Time>
+  </Vote>
+  <Vote>
+    <Choice>Windy</Choice>
+    <Time>12/4/2014 7:19:48 PM</Time>
   </Vote>
 </Poll>
