@@ -11,15 +11,16 @@
             <h1>Graphs</h1>
         </div>
         
-
-
         <div id="container" style="min-width: 248px; height: auto;">
-            <asp:Literal ID="ltrChart" runat="server"></asp:Literal>
+            <asp:Literal ID="pressureChart" runat="server"></asp:Literal>
+        </div>
+        <div id="Div1" style="min-width: 248px; height: auto;">
+            <asp:Literal ID="temperatureChart" runat="server"></asp:Literal>
+        </div>
+        <div id="Div2" style="min-width: 248px; height: auto;">
+            <asp:Literal ID="rhChart" runat="server"></asp:Literal>
         </div>
 
-
-
-   
     </form>
 
     <link href="Content/css/hobo.css" rel="stylesheet" />

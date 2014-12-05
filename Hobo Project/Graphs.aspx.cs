@@ -24,7 +24,7 @@ namespace Hobo_Project
             List<double> rh = dbcon.readData("rh");
 
 
-            for (int i = dateTime.Count() - 1; i >= 0; i--)
+            for (int i = 0; i < dateTime.Count(); i++)
             {
                 readingsList.Add(new Readings()
                 {
@@ -36,28 +36,97 @@ namespace Hobo_Project
             }
 
 
-
-            // set the graph
-            DotNet.Highcharts.Highcharts chart = new DotNet.Highcharts.Highcharts("chart")
-                .SetXAxis(new XAxis
-                {
-                    /******* TODO: I think this is where the chart label options are set  *******/
-                    // 1 - delete the x/y axis data labels
-                    // 2 - add axis titles
-                    // 3 - make the graph larger to be easier to see
-                    Categories = this.setCategories()
-                })
-                .SetSeries(new Series
-                {
-                    Data = new Data(this.setData())
-                });
-
-            chart.SetTitle(new Title { Text = "Pressure vs Time" });
-            ltrChart.Text = chart.ToHtmlString();
+            displayPressureChart();
+            displayTemperatureChart();
+            displayRelativeHumidityChart();
 
 
         }
 
+        private void displayPressureChart()
+        {
+            // set the chart
+            DotNet.Highcharts.Highcharts chart = new DotNet.Highcharts.Highcharts("PressureChart")
+                .SetXAxis(new XAxis
+                {
+                    Categories = this.setCategories(),
+                    Title = new XAxisTitle { Text = "Time" },
+                    Labels = new XAxisLabels { Enabled = false }
+                })
+                .SetYAxis(new YAxis
+                {
+                    Title = new YAxisTitle { Text = "Pressure" }
+                })
+                .SetLegend(new Legend
+                {
+                    Enabled = false
+                })
+                .SetSeries(new Series
+                {
+                    Data = new Data(this.setPressureData()),
+                    Name = "Pressure"
+                })
+                .SetTitle(new Title { Text = "Pressure vs Time" });
+
+            pressureChart.Text = chart.ToHtmlString();
+        }
+
+        private void displayTemperatureChart()
+        {
+            // set the chart
+            DotNet.Highcharts.Highcharts chart = new DotNet.Highcharts.Highcharts("TemperatureChart")
+                .SetXAxis(new XAxis
+                {
+                    Categories = this.setCategories(),
+                    Title = new XAxisTitle { Text = "Time" },
+                    Labels = new XAxisLabels { Enabled = false }
+                })
+                .SetYAxis(new YAxis
+                {
+                    Title = new YAxisTitle { Text = "Temperature" }
+                })
+                .SetLegend(new Legend
+                {
+                    Enabled = false
+                })
+                .SetSeries(new Series
+                {
+                    Data = new Data(this.setTemperatureData()),
+                    Name = "Temperature"
+                })
+                .SetTitle(new Title { Text = "Temperature vs Time"});
+
+
+            temperatureChart.Text = chart.ToHtmlString();
+        }
+
+        private void displayRelativeHumidityChart()
+        {
+            // set the chart
+            DotNet.Highcharts.Highcharts chart = new DotNet.Highcharts.Highcharts("RHChart")
+                .SetXAxis(new XAxis
+                {
+                    Categories = this.setCategories(),
+                    Title = new XAxisTitle { Text = "Time" },
+                    Labels = new XAxisLabels { Enabled = false }
+                })
+                .SetYAxis(new YAxis
+                {
+                    Title = new YAxisTitle { Text = "Relative Humidity" }
+                })
+                .SetLegend(new Legend
+                {
+                    Enabled = false
+                })
+                .SetSeries(new Series
+                {
+                    Data = new Data(this.setRelativeHumidityData()),
+                    Name = "Relative Humidity"
+                })
+                .SetTitle(new Title { Text = "Relative Humidity vs Time" });
+
+            rhChart.Text = chart.ToHtmlString();
+        }
 
         // set categories
         private string[] setCategories()
@@ -73,13 +142,37 @@ namespace Hobo_Project
 
         }
 
-        private object[] setData()
+        private object[] setPressureData()
         {
             object[] results = new object[readingsList.Count()];
 
             for (int i = 0; i < readingsList.Count(); i++)
             {
                 results[i] = readingsList[i].Pressure;
+            }
+
+            return results;
+        }
+
+        private object[] setTemperatureData()
+        {
+            object[] results = new object[readingsList.Count()];
+
+            for (int i = 0; i < readingsList.Count(); i++)
+            {
+                results[i] = readingsList[i].Temperature;
+            }
+
+            return results;
+        }
+
+        private object[] setRelativeHumidityData()
+        {
+            object[] results = new object[readingsList.Count()];
+
+            for (int i = 0; i < readingsList.Count(); i++)
+            {
+                results[i] = readingsList[i].RelativeHumidity;
             }
 
             return results;
