@@ -78,7 +78,7 @@
     <Content Include="Poll.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Predictions.aspx" />
+    <Content Include="About.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Highcharts-4.0.1\js\adapters\standalone-framework.js" />
@@ -136,12 +136,12 @@
     <Compile Include="Graphs.aspx.designer.cs">
       <DependentUpon>Graphs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Predictions.aspx.cs">
-      <DependentUpon>Predictions.aspx</DependentUpon>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Predictions.aspx.designer.cs">
-      <DependentUpon>Predictions.aspx</DependentUpon>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Readings.cs" />
