@@ -60,7 +60,7 @@ namespace Hobo_Project
                 results = date_Search(results);
                 flag = false;
             }
-            else if (String.IsNullOrWhiteSpace(searchDateBeginTB.Text) || String.IsNullOrWhiteSpace(searchDateEndTB.Text))
+            else if (String.IsNullOrWhiteSpace(searchDateBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchDateEndTB.Text))
             {
                 String error = "Please fill in both fields for " + searchDateLabel.Text + ".<br />";
                 print_Error(error);
@@ -71,7 +71,7 @@ namespace Hobo_Project
                 results = pressure_Search(results);
                 flag = false;
             }
-            else if (String.IsNullOrWhiteSpace(searchPressureBeginTB.Text) || String.IsNullOrWhiteSpace(searchPressureEndTB.Text))
+            else if (String.IsNullOrWhiteSpace(searchPressureBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchPressureEndTB.Text))
             {
                     String error = "Please fill in both fields for " + searchPressureLabel.Text + ".<br />";
                     print_Error(error);
@@ -82,7 +82,7 @@ namespace Hobo_Project
                 results = temp_Search(results);
                 flag = false;
             }
-            else if (String.IsNullOrWhiteSpace(searchTempBeginTB.Text) || String.IsNullOrWhiteSpace(searchTempEndTB.Text))
+            else if (String.IsNullOrWhiteSpace(searchTempBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchTempEndTB.Text))
             {
                     String error = "Please fill in both fields for " + searchTempLabel.Text + ".<br />";
                     print_Error(error);
@@ -93,7 +93,7 @@ namespace Hobo_Project
                 results = rh_Search(results);
                 flag = false;
             }
-            else if (String.IsNullOrWhiteSpace(searchRhBeginTB.Text) || String.IsNullOrWhiteSpace(searchRhEndTB.Text))
+            else if (String.IsNullOrWhiteSpace(searchRhBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchRhEndTB.Text))
             {
                     String error = "Please fill in both fields for " + searchRhLabel.Text + ".<br />";
                     print_Error(error);
