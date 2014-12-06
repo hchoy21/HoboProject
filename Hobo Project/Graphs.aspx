@@ -25,6 +25,4 @@
 
     <link href="Content/css/hobo.css" rel="stylesheet" />
 
-    
 </asp:Content>
-
