@@ -110,6 +110,7 @@ namespace Hobo_Project
 
         protected List<Readings> date_Search(List<Readings> results)
         {
+            List<Readings> res = new List<Readings>();
             try
             {
                 DateTime startDate = Convert.ToDateTime(searchDateBeginTB.Text);
@@ -122,12 +123,12 @@ namespace Hobo_Project
                     return readingsList;
                 }
 
-                for (int i = 0; i < readingsList.Count(); i++)
+                for (int i = 0; i < results.Count(); i++)
                 {
-                    if (startDate.Date.CompareTo(readingsList[i].Time.Date) <= 0 &&
-                        endDate.Date.CompareTo(readingsList[i].Time.Date) >= 0)
+                    if (startDate.Date.CompareTo(results[i].Time.Date) <= 0 &&
+                        endDate.Date.CompareTo(results[i].Time.Date) >= 0)
                     {
-                        results.Add(readingsList[i]);
+                        res.Add(results[i]);
                     }
                 }
             }
@@ -138,7 +139,7 @@ namespace Hobo_Project
                 return readingsList;
             }
 
-            return results;
+            return res;
         }
 
         protected List<Readings> pressure_Search(List<Readings> results)
