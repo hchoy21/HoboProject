@@ -17,13 +17,13 @@ namespace Hobo_Project
         {
             dbcon = new DBConnect();
 
-            List<DateTime> dateTime     = dbcon.readDateTime("dateTime");
-            List<double> pressure       = dbcon.readData("pressure");
-            List<double> temperature    = dbcon.readData("temperature");
-            List<double> rh             = dbcon.readData("rh");
+            List<DateTime> dateTime = dbcon.readDateTime("dateTime");
+            List<double> pressure = dbcon.readData("pressure");
+            List<double> temperature = dbcon.readData("temperature");
+            List<double> rh = dbcon.readData("rh");
 
 
-            for (int i = dateTime.Count()-1; i >= 0; i--)
+            for (int i = dateTime.Count() - 1; i >= 0; i--)
             {
                 readingsList.Add(new Readings()
                 {
@@ -51,6 +51,7 @@ namespace Hobo_Project
         protected void searchButton_Click(object sender, EventArgs e)
         {
             List<Readings> results = new List<Readings>();
+            results = readingsList.ToList();
 
             searchStatusLabel.Text = "";
             bool flag = true;
@@ -73,8 +74,8 @@ namespace Hobo_Project
             }
             else if (String.IsNullOrWhiteSpace(searchPressureBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchPressureEndTB.Text))
             {
-                    String error = "Please fill in both fields for " + searchPressureLabel.Text + ".<br />";
-                    print_Error(error);
+                String error = "Please fill in both fields for " + searchPressureLabel.Text + ".<br />";
+                print_Error(error);
             }
 
             if (!String.IsNullOrWhiteSpace(searchTempBeginTB.Text) && !String.IsNullOrWhiteSpace(searchTempEndTB.Text))
@@ -84,8 +85,8 @@ namespace Hobo_Project
             }
             else if (String.IsNullOrWhiteSpace(searchTempBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchTempEndTB.Text))
             {
-                    String error = "Please fill in both fields for " + searchTempLabel.Text + ".<br />";
-                    print_Error(error);
+                String error = "Please fill in both fields for " + searchTempLabel.Text + ".<br />";
+                print_Error(error);
             }
 
             if (!String.IsNullOrWhiteSpace(searchRhBeginTB.Text) && !String.IsNullOrWhiteSpace(searchRhEndTB.Text))
@@ -95,8 +96,8 @@ namespace Hobo_Project
             }
             else if (String.IsNullOrWhiteSpace(searchRhBeginTB.Text) ^ String.IsNullOrWhiteSpace(searchRhEndTB.Text))
             {
-                    String error = "Please fill in both fields for " + searchRhLabel.Text + ".<br />";
-                    print_Error(error);
+                String error = "Please fill in both fields for " + searchRhLabel.Text + ".<br />";
+                print_Error(error);
             }
 
             if (!String.IsNullOrWhiteSpace(searchStatusLabel.Text) || flag)
@@ -112,13 +113,13 @@ namespace Hobo_Project
             try
             {
                 DateTime startDate = Convert.ToDateTime(searchDateBeginTB.Text);
-                DateTime endDate   = Convert.ToDateTime(searchDateEndTB.Text);
+                DateTime endDate = Convert.ToDateTime(searchDateEndTB.Text);
 
                 if (startDate.Date.CompareTo(endDate) > 0)
                 {
                     string error = "Invalid range of dates, please try again.<br />";
                     print_Error(error);
-                    return results;
+                    return readingsList;
                 }
 
                 for (int i = 0; i < readingsList.Count(); i++)
@@ -134,6 +135,7 @@ namespace Hobo_Project
             {
                 string error = "Incorrect Date Format, please try again.<br />";
                 print_Error(error);
+                return readingsList;
             }
 
             return results;
@@ -148,11 +150,11 @@ namespace Hobo_Project
             if (double.TryParse(searchPressureBeginTB.Text, out beginPressure) &&
                 double.TryParse(searchPressureEndTB.Text, out endPressure))
             {
-                if(beginPressure > endPressure)
+                if (beginPressure > endPressure)
                 {
                     string error = "Invalid pressure range.<br />";
                     print_Error(error);
-                    return results;
+                    return readingsList;
                 }
                 for (int i = 0; i < results.Count(); i++)
                 {
@@ -168,8 +170,8 @@ namespace Hobo_Project
             {
                 string error = "Invalid pressure, please enter another number.<br />";
                 print_Error(error);
+                return readingsList;
             }
-            return results;
         }
 
         protected List<Readings> temp_Search(List<Readings> results)
@@ -185,7 +187,7 @@ namespace Hobo_Project
                 {
                     string error = "Invalid temperature range.<br />";
                     print_Error(error);
-                    return results;
+                    return readingsList;
                 }
                 for (int i = 0; i < results.Count(); i++)
                 {
@@ -201,8 +203,8 @@ namespace Hobo_Project
             {
                 string error = "Invalid temperature, please enter another number.<br />";
                 print_Error(error);
+                return readingsList;
             }
-            return results;
         }
 
         protected List<Readings> rh_Search(List<Readings> results)
@@ -218,7 +220,7 @@ namespace Hobo_Project
                 {
                     string error = "Invalid relative humidity range.<br />";
                     print_Error(error);
-                    return results;
+                    return readingsList;
                 }
                 for (int i = 0; i < results.Count(); i++)
                 {
@@ -234,8 +236,8 @@ namespace Hobo_Project
             {
                 string error = "Invalid relative humidity, please enter another number.<br />";
                 print_Error(error);
+                return readingsList;
             }
-            return results;
         }
 
         protected void print_Error(string error)
