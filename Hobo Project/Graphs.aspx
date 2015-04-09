@@ -7,21 +7,24 @@
     <div class="page-header">
         <h1>Graphs</h1>
     </div>
-
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/4.embed?width=640&height=480"></iframe>
-        
-    </div>
-
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/5.embed?width=640&height=480"></iframe>
-    </div>
-
-    <div class="container-fluid">
-        <iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~hchoy7132/6.embed?width=640&height=480"></iframe>
-    </div>
+    
 
 
     <link href="Content/css/hobo.css" rel="stylesheet" />
+        <form runat="server">
+            <asp:Chart ID="Chart1" runat="server" OnLoad="Chart1_Load">
+                <Series>
+                    <asp:Series Name="SeriesX">
+                    </asp:Series>
+                    <asp:Series Name="SeriesY">
+                    </asp:Series>
+                </Series>
+                <ChartAreas>
+                    <asp:ChartArea Name="ChartArea1">
+                    </asp:ChartArea>
+                </ChartAreas>
+            </asp:Chart>
+            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server"></asp:ObjectDataSource>
+        </form>
 </form>
 </asp:Content>

@@ -51,48 +51,38 @@ namespace Hobo_Project
         protected void searchButton_Click(object sender, EventArgs e)
         {
             List<Readings> results = new List<Readings>();
-            // 1 - check if both TextBox are filled
-            if (!isEmptySearch())
+
+            try
             {
-                try
+                DateTime startDate = Convert.ToDateTime(searchDateBeginTB.Text);
+                DateTime endDate   = Convert.ToDateTime(searchDateEndTB.Text);
+
+
+                for (int i = 0; i < readingsList.Count(); i++)
                 {
-                    DateTime startDate = Convert.ToDateTime(searchDateBeginTB.Text);
-                    DateTime endDate = Convert.ToDateTime(searchDateEndTB.Text);
-
-
-                    for (int i = 0; i < readingsList.Count(); i++)
+                    // add readings which are between the start and end dates
+                    if (startDate.Date.CompareTo(readingsList[i].Time.Date) <= 0 &&
+                        endDate.Date.CompareTo(readingsList[i].Time.Date) >= 0)
                     {
-                        if (startDate.Date.CompareTo(readingsList[i].Time.Date) <= 0 &&
-                            endDate.Date.CompareTo(readingsList[i].Time.Date) >= 0)
-                        {
-                            results.Add(readingsList[i]);
-                        }
+                        results.Add(readingsList[i]);
                     }
-
-                }catch(FormatException){
-                    searchStatusLabel.Text = "Incorrect Date Format, please try again";
                 }
+
+
+
+                // bind search results to table
+                GridView1.DataSource = results;
+                GridView1.DataBind();
+
+            }catch(FormatException){
+                searchStatusLabel.Text = "Incorrect Date Format, please try again";
+            }
 
                 
 
-            }
-
-
-            GridView1.DataSource = results;
-            GridView1.DataBind();
             
-        }
 
-        protected Boolean isEmptySearch()
-        {
-            if (searchDateBeginTB == null || searchDateEndTB == null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
         }
         
     }
